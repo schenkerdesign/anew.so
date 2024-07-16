@@ -1,6 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anew Homescreen</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Roboto, system-ui, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fff;
+        }
+        .container {
+            text-align: center;
+            margin: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+        .header-text {
+            color: black;
+            font-size: 1.8em; /* 32px by default */
+            font-weight: 500; /* Medium weight */
+            margin: 20px 0;
+        }
+        .subtext {
+            color: grey;
+            font-size: 1em; /* 16px by default */
+        }
+        .email {
+            color: #666666; /* Slightly darker grey */
+            font-weight: 500;
+        }
+        @media (max-width: 600px) {
+            .header-text {
+                font-size: 1.5em; /* 24px on smaller screens */
+            }
+            .subtext {
+                font-size: 0.875em; /* 14px on smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
-<h1>Hello from Anew.so</h1>
+    <div class="container">
+        <img src="header_image.png" alt="Header Image">
+        <div class="header-text">Product In Closed Testing</div>
+        <div class="subtext">
+            Email <span class="email">luke@anew.so</span> to request joining the commercial beta.
+        </div>
+    </div>
 </body>
+</html>
