@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anew Homescreen</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Roboto, system-ui, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            background-color: #fff;
+        }
+        .container {
+            text-align: center;
+            margin: 20px;
+            max-width: 800px;
+            width: 100%;
+            margin-top: 15vh; /* 15% of the viewport height */
+        }
+        img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+        .header-text {
+            color: black;
+            font-size: 1.8em; /* 32px by default */
+            font-weight: 500; /* Medium weight */
+            margin: 20px 0;
+        }
+        .subtext {
+            color: grey;
+            font-size: 1em; /* 16px by default */
+            text-align: left;
+        }
+        .email {
+            color: #666666; /* Slightly darker grey */
+            font-weight: 500;
+        }
+        @media (max-width: 600px) {
+            .header-text {
+                font-size: 1.5em; /* 24px on smaller screens */
+            }
+            .subtext {
+                font-size: 0.875em; /* 14px on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="header_image.png" alt="Header Image">
+        <div class="header-text">Privacy Policy</div>
+        <div class="subtext">
+            <p>
+                On your device, Anew uses a number of permissions to work correctly (Accessibility Permission, Alarm Permissions, Notification Permissions, etc). However, data relative to those services and permissions is not transmitted from the device to us.
+            </p>
+            <p>
+                Anew only transmits anonymous engineering reports to our staff to help us improve the product. No other information is directly collected by us.
+            </p>
+                We are distributed through Google Play, which does provide us with general analytics information about our user base, but no individually identifiable information. This is the same information provided to all developers who distribute through the Google Play Store. You can read Google’s Privacy Policies for more information in that regard.
+            </p>
+            </p>
+                For questions and issues, email us at relations@schenker.design
+            </p>
+        </div>
+    </div>
+</body>
+</html>
