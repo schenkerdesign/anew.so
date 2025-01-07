@@ -1,0 +1,294 @@
+/* Base styles */
+@font-face {
+    font-family: 'labil';
+    src: url('fonts/labil_grotesk_medium.otf') format('truetype'); /* Path to the font file */
+    font-weight: normal; /* Optional: Specify the weight for this font file */
+    font-style: normal; /* Optional: Specify the style (e.g., normal, italic) */
+}
+
+@font-face {
+    font-family: 'labil-reg';
+    src: url('fonts/labil_grotesk_regular.otf') format('truetype'); /* Path to the font file */
+    font-weight: normal; /* Optional: Specify the weight for this font file */
+    font-style: normal; /* Optional: Specify the style (e.g., normal, italic) */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'labil', sans-serif;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: #333; */
+    background-color: #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 76px;
+    z-index: 1000;
+}
+
+.desktop-header, .mobile-header {
+    display: none; /* Hide both by default */
+}
+
+/* Show desktop header when width is greater than 664px */
+@media (min-width: 665px) {
+    .desktop-header {
+        display: block;
+        width: 100%; /* Fill the available width */
+        max-width: 928px; /* Prevent exceeding 665px */
+        margin: 0 auto; /* Center within the parent */
+        /* background-color: #444; Optional background */
+    }
+
+    .banner-container {
+        flex-direction: row; /* Children arranged side by side */
+    }
+
+    .main-column {
+        padding-top: 150px;
+    }
+}
+
+/* Show mobile header when width is 664px or less */
+@media (max-width: 664px) {
+    .mobile-header {
+        display: block;
+        width: 100%;
+    }
+
+    .banner-container {
+        flex-direction: column; /* Children stacked vertically */
+        align-items: center;
+    }
+
+
+    .main-column {
+        padding-top: 100px;
+    }
+}
+
+.banner-container {
+    display: flex;
+    max-width: 665px; /* Constrain the container width */
+    margin: 0 auto; /* Center the container */
+    gap: 20px; /* Optional: spacing between children */
+    flex-wrap: wrap; /* Allow wrapping for smaller widths */
+    box-sizing: border-box;
+    padding: 0 39px;
+}
+
+main {
+    margin: 70px 0; /* Ensure content doesn't overlap with the fixed header */
+    /* padding: 20px; */
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Set spacing between children */
+    padding: 10px; /* Optional padding */
+    /* background-color: #f0f0f0; For visual clarity */
+    width: 100%;
+    justify-content: center;
+}
+
+.child {
+    /* padding: 5px 10px; */
+    /* background-color: #007BFF; */
+    color: #000;
+    font-size: 18px;
+
+    /* border-radius: 5px; */
+}
+
+.child img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    /* filter: none; */
+}
+
+/* Push the far-right item to the right */
+.far-right {
+    margin-left: auto;
+    margin-right: 18px;
+}
+
+h1 {
+    font-family: 'labil';
+    font-size: 35px;
+    margin:0;
+}
+
+h2 {
+    font-family: 'labil';
+    font-size: 30px;
+    margin:0;
+}
+
+h3 {
+    font-family: 'labil';
+    font-size: 19px;
+    margin:0;
+}
+
+p {
+    /* font-family: 'labil'; */
+    font-size: 14px;
+    color: #8c8c8c;
+    margin:0;
+    font-family: 'labil-reg', sans-serif;
+}
+hr {
+    border: none; 
+    height: 2px; 
+    background-color: black;
+}
+
+li {
+    font-size: 16px;
+}
+
+.button {
+    display: inline-block; /* Makes it behave like a button */
+    padding: 9px 20px; /* Adds spacing around the text */
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    text-align: center; /* Centers the text */
+    text-decoration: none; /* Removes underline from the link */
+    border: none; /* No border */
+    border-radius: 30px; /* Rounded corners (optional) */
+    font-size: 14px; /* Adjust font size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth hover effect */
+    height: 20px;
+}
+
+.main-column {
+    display: flex;
+    max-width: 665px; /* Set the max width */
+    margin: 0 auto; /* Center it horizontally */
+    width: 100%; /* Allow it to shrink to fit smaller screens */
+    /* padding: 20px; Optional padding for spacing */
+    /* padding-top: 100px; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-element {
+    width: 283px;
+    height: 168px;
+}
+
+a.button img {
+    filter: brightness(0) invert(1); /*make it white*/
+    height: 32px;
+    width: 32px;
+}
+
+a.button {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    /* color: black; This will apply to both text and the SVG's color via currentColor */
+    gap: 10px;
+    transition: color 0.3s;
+    /* margin: 0 auto; */
+}
+
+.benefit-container {
+    max-width: 450px;
+    position: relative;
+}
+
+.benefit-container .count {
+    position: absolute;
+    left: 15px;
+    top: 33px;
+    font-size: 20px;
+    color:#ccc;
+}
+
+.benefit-container .content {
+    padding: 24px 39px;
+}
+
+.card {
+    background-color: white; /* Card background color */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 16px 22px; /* Inner padding */
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+}
+
+p.small {
+    font-size: 12px;
+}
+
+.card img {
+    position: absolute;
+    right: 22px;
+    top: 16px;
+    width: 30px;
+    height: 30px;
+}
+
+.connect-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.connect-icon img {
+    width: 42px;
+    height: 42px;
+}
+
+p.footer {
+    font-size: 14px;
+    color: #ccc
+}
+
+a.child {
+    text-decoration: none;
+}
+
+#menu {
+    width: 100%;
+    background-color: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    padding: 40px 40px;
+    display: none; /* Hidden by default */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#menu a {
+    color: #000;
+    font-size: 24px;
+}
