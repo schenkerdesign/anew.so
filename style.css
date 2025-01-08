@@ -13,6 +13,11 @@
     font-style: normal; /* Optional: Specify the style (e.g., normal, italic) */
 }
 
+/*idk but it displays right now...*/
+section {
+    display: contents;
+}
+
 html {
     scroll-behavior: smooth;
 }

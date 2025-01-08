@@ -3,13 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anew Homescreen</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
+
+    <!-- SEO built-ins -->
+    <title>Anew: Anxiety Relief and Mental Health Launcher</title> <!-- 50-60 char, shows up as google link -->
+    <!-- Around 160 char, shows up as google description. This is 152 -->
+    <meta name="description" content="Solve phone addiction, reduce screen time, reduce anxiety, improve focus and productivity, digital detox, and more. Smartphone mental health, perfected.">
+
+    <!-- Info for embed and social media links to this site -->
+    <meta property="og:title" content="Anew: Anxiety Relief and Mental Health Launcher">
+    <meta property="og:description" content="Reduce phone addiction, anxiety, and screen time with Anew. Try the healthiest smartphone experience for free today.">
+    <meta property="og:url" content="https://anew.so">
+    <meta property="og:image" content="https://anew.so/images/og-banner.jpg"> <!-- recommended 1200px630px -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Anew: Anxiety Relief Homescreen">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- SEO additional info -->
+    <!-- https://validator.schema.org/ -->
+    <!-- https://schema.org/MobileApplication -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "MobileApplication",
+          "name": "Anew: Anxiety Relief Launcher",
+          "alternateName": "Anew Homescreen",
+          "operatingSystem": "Android",
+          "image": "https://anew.so/images/og-banner.jpg", // url of image
+          //"video": "", // url of video
+          "description": "Anew is a minimalist Android launcher designed to improve mental health, reduce anxiety, and limit screen time.",
+          "softwareVersion": "1.0.0",
+          "downloadUrl": "https://play.google.com/store/apps/details?id=so.anew.homescreen",
+          "installUrl": "https://play.google.com/store/apps/details?id=so.anew.homescreen",
+          "memoryRequirements": "2GB",
+          "fileSize": "11MB",
+          "featureList": "App blocking, website blocking, mental health education, icon customization, wallpaper customization, health recommendations, improved mental health, lower anxiety.",
+          "inLanguage": "en",
+          "applicationSubCategory": "Productivity, Mental Health, Behavioral Health",
+          "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          //"aggregateRating": {
+          //  "@type": "AggregateRating",
+          //  "ratingValue": "4.8",
+          //  "reviewCount": "125"
+          //},
+          "author": {
+            "@type": "Organization",
+            "name": "Anew Technology",
+            "url": "https://www.anew.so"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Anew Technology",
+            "url": "https://www.anew.so"
+          }//,
+          //"interactionStatistic": {
+          //  "@type": "InteractionCounter",
+          //  "interactionType": "https://schema.org/DownloadAction",
+          //  "userInteractionCount": 5000
+          //}
+        }
+    </script>
+
 </head>
 <body>
     <header class="fixed-header">
-        <div class="desktop-header">
+        <nav class="desktop-header">
             <div class="flex-container">
                 <a class="child" href="#home">Anew</a>
                 <a class="child" style="color:#808080" href="#benefits">Benefits</a>
@@ -20,8 +85,8 @@
                     Try for free
                 </a>
             </div>
-        </div>
-        <div class="mobile-header">
+        </nav>
+        <nav class="mobile-header">
             <div class="flex-container">
                 <div class="child">
                     <img id="menuButton" src="images/list.svg"/>
@@ -31,168 +96,181 @@
                     Try for free
                 </a>
             </div>
-        </div>
+        </nav>
     </header>
 
     <header id="menu">
-        <div class="menu-container">
+        <nav class="menu-container">
             <a class="child" href="#home">Home</a>
             <a class="child" href="#benefits">Benefits</a>
             <a class="child" href="#how-it-works">How it works</a>
             <a class="child" href="#learning">Learning</a>
             <a class="child" href="#contact">Connect</a>
-        </div>
+        </nav>
     </header>
 
     <main>
         <div class="main-column" id="home">
-            <div class="banner-container">
-                <div class="banner-element">
-                    <h2 style="margin-top: 7px">1 app.<br>7 health impacts.</h2>
-                    <p style="margin-top:12px">The healthiest smartphone experience.<br>Designed for the healthiest you.</p>
-                </div>
-                <div class="banner-element">
-                    <img src="images/banner-img.svg"/>
-                </div>
-            </div>
-            <a class="button" style="margin-top:62px" href="https://www.youtube.com/shorts/SYrdzlnfBe4" target="_blank">
-                <img src="images/play-circle.svg"/>
-                Watch first use demo
-            </a>
-            <a id="benefits" class="button" style="margin-top:12px" href="https://play.google.com/store/apps/details?id=so.anew.homescreen" target="_blank">
-                Try for free
-            </a>
-
-            <div class="benefit-container" style="margin-top:75px">
-                <div class="count">1.</div>
-                <div class="content">
-                    <h2>Fix addiction</h2>
-                    <p style="margin-top:4px">Block apps and websites completely, or just at times you don't want to overuse.</p>
-                </div>
-            </div>
-            <div class="benefit-container">
-                <div class="count">2.</div>
-                <div class="content">
-                    <h2>Optimize sleep</h2>
-                    <p style="margin-top:4px">Create your own sleep mode without apps, websites, and notifications that keep you up.</p>
-                </div>
-            </div>
-            <div class="benefit-container">
-                <div class="count">3.</div>
-                <div class="content">
-                    <h2>More productivity</h2>
-                    <p style="margin-top:4px">Create your own productive mode that just gives you access to the apps you want for studying and work.</p>
-                </div>
-            </div>
-            <div class="benefit-container">
-                <div class="count">4.</div>
-                <div class="content">
-                    <h2>Deeper focus</h2>
-                    <p style="margin-top:4px">Limiting your daily use of short-term content consumption has direct impacts on improving focus. </p>
-                </div>
-            </div>
-            <div class="benefit-container">
-                <div class="count">5.</div>
-                <div class="content">
-                    <h2>Less anxiety</h2>
-                    <p style="margin-top:4px">Reducing access to apps that cause anxiety, and reducing addictive and regretful use, reduces anxiety.</p>
-                </div>
-            </div>
-            <div class="benefit-container">
-                <div class="count">6.</div>
-                <div class="content">
-                    <h2>Less screentime</h2>
-                    <p style="margin-top:4px">By having modes that limit apps during your day, your overall use decreases, which has direct anxiety, social, and performance benefits.</p>
-                </div>
-            </div>
-            <div class="benefit-container">
-                <div class="count">7.</div>
-                <div class="content">
-                    <h2>Better social skills</h2>
-                    <p style="margin-top:4px">Being present with others, more often, allows the opportunity to create and improve social skills. Less phone use opens the door to more real-life socializing.</p>
-                </div>
-            </div>
-
-            <a id="how-it-works" class="button" style="margin-top:55px" href="https://play.google.com/store/apps/details?id=so.anew.homescreen" target="_blank">
-                Try Anew Homescreen for free
-            </a>
-
-            <h1 style="margin-top:70px">How it works</h1>
-            <hr style="width:150px">
-
-            <div class="benefit-container">
-                <div class="content">
-                    <h2>Comprehensive customization</h2>
-                    <p style="margin-top:8px">We start with a variety of comprehensive controls for you: </p>
-                    <ul>
-                        <li>App blocking</li>
-                        <li>Website blocking</li>
-                        <li>Notification blocking</li>
-                        <li>Icon aesthetic customization</li>
-                        <li>Wallpaper customization</li>
-                        <li>Weekly routines</li>
-                        <li>Customizable restrictions</li>
-                    </ul>
-                    <p style="margin-top:4px">All of these controls work in combination to deliver your health outcomes.</p>
-                    
-                    <h2 style="margin-top: 30px">Targeted guidance</h2>
-                    <p style="margin-top:8px">Anew opens the door to millions of different ways to curate your smartphone.</p>
-                    <p style="margin-top:8px">To get the best results, we provide guidance to help you learn the underlying concepts that deliver results you want. </p>
-                </div>
-            </div>
-
-            <a id="learning" class="button" style="margin-top:30px" href="https://play.google.com/store/apps/details?id=so.anew.homescreen" target="_blank">
-                Try Anew Homescreen for free
-            </a>
-
-            <h1 style="margin-top:70px">Learning</h1>
-            <hr style="width:70px">
-
-            <div class="benefit-container">
-                <div class="content">
-                    <p>Here are a few articles we include in Anew, that you can use to better understand how to improve your smartphone lifestyle.</p>
-                    <div class="card">
-                        <img src="images/article-medium.svg">
-                        <h3 style="width:80%; align-self: flex-start;">Addressing anxiety</h3>
-                        <p style="width:80%; margin-top: 5px;" class="small">How anxiety works, what triggers it, and how to strategically reduce it by making environmental changes.</p>
-                        <a class="button" style="align-self: center; margin-top: 15px;">
-                            Read now
-                        </a>
+            <section>
+                <div class="banner-container">
+                    <div class="banner-element">
+                        <h2 style="margin-top: 7px">1 app.<br>7 health impacts.</h2>
+                        <p style="margin-top:12px">The healthiest smartphone experience.<br>Designed for the healthiest you.</p>
                     </div>
-                    <div class="card">
-                        <img src="images/article-medium.svg">
-                        <h3 style="width:80%; align-self: flex-start;">Addressing overuse</h3>
-                        <p style="width:80%;  margin-top: 5px" class="small">How habits work in your brain, how behavior is shaped, and how you can create and destroy habits by curating your environment.</p>
-                        <a class="button" style="align-self: center; margin-top: 15px;">
-                            Read now
-                        </a>
-                    </div>
-                    <div class="card">
-                        <img src="images/article-medium.svg">
-                        <h3 style="width:80%; align-self: flex-start;">Why Anew is your best option</h3>
-                        <p style="width:80%;  margin-top: 5px" class="small">How different mental health apps address health and behavior, and why Anew is the most effective approach.</p>
-                        <a class="button" style="align-self: center; margin-top: 15px;">
-                            Read now
-                        </a>
+                    <div class="banner-element">
+                        <!-- alt field is for SEO -->
+                        <img src="images/banner-img.svg" alt="Anew Homescreen health impact on a visual graph, showing improved mental health, and reduced addictive use, over a month. Change behavior lower anxiety."/>
                     </div>
                 </div>
-            </div>
+                <a class="button" style="margin-top:62px" href="https://www.youtube.com/shorts/SYrdzlnfBe4" target="_blank">
+                    <img src="images/play-circle.svg"/>
+                    Watch first use demo
+                </a>
+                <a id="benefits" class="button" style="margin-top:12px" href="https://play.google.com/store/apps/details?id=so.anew.homescreen" target="_blank">
+                    Try for free
+                </a>
+            </section>
 
-            <a class="button" style="margin-top:35px" href="https://play.google.com/store/apps/details?id=so.anew.homescreen" target="_blank">
-                Read more on our Medium page
-            </a>
+            <section>
+                <article class="benefit-container" style="margin-top:75px">
+                    <div class="count">1.</div>
+                    <div class="content">
+                        <h2>Fix addiction</h2>
+                        <p style="margin-top:4px">Block apps and websites completely, or just at times you don't want to overuse.</p>
+                    </div>
+                </article>
+                <article class="benefit-container">
+                    <div class="count">2.</div>
+                    <div class="content">
+                        <h2>Optimize sleep</h2>
+                        <p style="margin-top:4px">Create your own sleep mode without apps, websites, and notifications that keep you up.</p>
+                    </div>
+                </article>
+                <article class="benefit-container">
+                    <div class="count">3.</div>
+                    <div class="content">
+                        <h2>More productivity</h2>
+                        <p style="margin-top:4px">Create your own productive mode that just gives you access to the apps you want for studying and work.</p>
+                    </div>
+                </article>
+                <article class="benefit-container">
+                    <div class="count">4.</div>
+                    <div class="content">
+                        <h2>Deeper focus</h2>
+                        <p style="margin-top:4px">Limiting your daily use of short-term content consumption has direct impacts on improving focus. </p>
+                    </div>
+                </article>
+                <article class="benefit-container">
+                    <div class="count">5.</div>
+                    <div class="content">
+                        <h2>Less anxiety</h2>
+                        <p style="margin-top:4px">Reducing access to apps that cause anxiety, and reducing addictive and regretful use, reduces anxiety.</p>
+                    </div>
+                </article>
+                <article class="benefit-container">
+                    <div class="count">6.</div>
+                    <div class="content">
+                        <h2>Less screentime</h2>
+                        <p style="margin-top:4px">By having modes that limit apps during your day, your overall use decreases, which has direct anxiety, social, and performance benefits.</p>
+                    </div>
+                </article>
+                <article class="benefit-container">
+                    <div class="count">7.</div>
+                    <div class="content">
+                        <h2>Better social skills</h2>
+                        <p style="margin-top:4px">Being present with others, more often, allows the opportunity to create and improve social skills. Less phone use opens the door to more real-life socializing.</p>
+                    </div>
+                </article>
 
-            <h1 style="margin-top:65px" id="contact">Connect</h1>
-            <hr style="width:80px">
+                <a id="how-it-works" class="button" style="margin-top:55px" href="https://play.google.com/store/apps/details?id=so.anew.homescreen" target="_blank">
+                    Try Anew Homescreen for free
+                </a>
+            </section>
 
-            <div class="connect-container" style="margin-top:22px">
-                <a class="connect-icon" href="https://www.reddit.com/r/anewphone/" target="_blank"><img src="images/reddit-logo.svg"></a>
-                <a class="connect-icon"><img src="images/discord-logo.svg"></a>
-                <a class="connect-icon" href="https://www.linkedin.com/company/anewphone/" target="_blank"><img src="images/linkedin-logo.svg"></a>
-                <a class="connect-icon" href="mailto:luke@anew.so?subject=Anew%20Inquiry"><img src="images/envelope-simple.svg"></a>
-            </div>
+            <section>
+                <h1 style="margin-top:70px">How it works</h1>
+                <hr style="width:150px">
 
-            <p class="footer" style="margin-top: 50px;">Anew Technology © 2025</p>
+                <div class="benefit-container">
+                    <div class="content">
+                        <h2>Comprehensive customization</h2>
+                        <p style="margin-top:8px">We start with a variety of comprehensive controls for you: </p>
+                        <ul>
+                            <li>App blocking</li>
+                            <li>Website blocking</li>
+                            <li>Notification blocking</li>
+                            <li>Icon aesthetic customization</li>
+                            <li>Wallpaper customization</li>
+                            <li>Weekly routines</li>
+                            <li>Customizable restrictions</li>
+                        </ul>
+                        <p style="margin-top:4px">All of these controls work in combination to deliver your health outcomes.</p>
+                        
+                        <h2 style="margin-top: 30px">Targeted guidance</h2>
+                        <p style="margin-top:8px">Anew opens the door to millions of different ways to curate your smartphone.</p>
+                        <p style="margin-top:8px">To get the best results, we provide guidance to help you learn the underlying concepts that deliver results you want. </p>
+                    </div>
+                </div>
+
+                <a id="learning" class="button" style="margin-top:30px" href="https://play.google.com/store/apps/details?id=so.anew.homescreen" target="_blank">
+                    Try Anew Homescreen for free
+                </a>
+            </section>
+
+            <section>
+                <h1 style="margin-top:70px">Learning</h1>
+                <hr style="width:70px">
+
+                <div class="benefit-container">
+                    <div class="content">
+                        <p>Here are a few articles we include in Anew, that you can use to better understand how to improve your smartphone lifestyle.</p>
+                        <article class="card">
+                            <img src="images/article-medium.svg">
+                            <h3 style="width:80%; align-self: flex-start;">Addressing anxiety</h3>
+                            <p style="width:80%; margin-top: 5px;" class="small">How anxiety works, what triggers it, and how to strategically reduce it by making environmental changes.</p>
+                            <a class="button" style="align-self: center; margin-top: 15px;">
+                                Read now
+                            </a>
+                        </article>
+                        <article class="card">
+                            <img src="images/article-medium.svg">
+                            <h3 style="width:80%; align-self: flex-start;">Addressing overuse</h3>
+                            <p style="width:80%;  margin-top: 5px" class="small">How habits work in your brain, how behavior is shaped, and how you can create and destroy habits by curating your environment.</p>
+                            <a class="button" style="align-self: center; margin-top: 15px;">
+                                Read now
+                            </a>
+                        </article>
+                        <article class="card">
+                            <img src="images/article-medium.svg">
+                            <h3 style="width:80%; align-self: flex-start;">Why Anew is your best option</h3>
+                            <p style="width:80%;  margin-top: 5px" class="small">How different mental health apps address health and behavior, and why Anew is the most effective approach.</p>
+                            <a class="button" style="align-self: center; margin-top: 15px;">
+                                Read now
+                            </a>
+                        </article>
+                    </div>
+                </div>
+
+                <a class="button" style="margin-top:35px" href="https://play.google.com/store/apps/details?id=so.anew.homescreen" target="_blank">
+                    Read more on our Medium page
+                </a>
+            </section>
+
+            <section>
+                <h1 style="margin-top:65px" id="contact">Connect</h1>
+                <hr style="width:80px">
+
+                <div class="connect-container" style="margin-top:22px">
+                    <a class="connect-icon" href="https://www.reddit.com/r/anewphone/" target="_blank"><img src="images/reddit-logo.svg"></a>
+                    <a class="connect-icon"><img src="images/discord-logo.svg"></a>
+                    <a class="connect-icon" href="https://www.linkedin.com/company/anewphone/" target="_blank"><img src="images/linkedin-logo.svg"></a>
+                    <a class="connect-icon" href="mailto:luke@anew.so?subject=Anew%20Inquiry"><img src="images/envelope-simple.svg"></a>
+                </div>
+            </section>
+
+            <footer>
+                <p class="footer" style="margin-top: 50px;">Anew Technology © 2025</p>
+            </footer>
 
         </div>
     </main>
